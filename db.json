@@ -1,19 +1,22 @@
 {
-  "posts": [
+  "restaurants": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "name": "KFC restaurant",
+      "address": "Noida sector 50",
+      "email": "kfc@test.com"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 2,
+      "name": "OM restaurant",
+      "address": "Delhi sector 50",
+      "email": "om@test.com"
+    },
+    {
+      "name": "McDonald's restaurant",
+      "address": "Noida sector 110",
+      "email": "McDonalds@test.com",
+      "id": 3
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
