@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RestoService } from '../resto.service';
 
 @Component({
   selector: 'app-list-resto',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListRestoComponent implements OnInit {
 
-  constructor() { }
+  restaurants = {};
+  constructor( private resto: RestoService ) { }
 
   ngOnInit(): void {
+      this.resto.getRestaurants().subscribe((response) => {
+        console.warn(response);
+        this.restaurants = response;
+      });
   }
 
 }
