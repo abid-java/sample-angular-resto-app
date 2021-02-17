@@ -29,6 +29,12 @@
       "name": "Halidram King restaurant",
       "address": "Draka sector 110",
       "email": "halidram@test.com"
+    },
+    {
+      "name": "test name",
+      "address": "test address",
+      "email": "test@test.com",
+      "id": 6
     }
   ]
 }

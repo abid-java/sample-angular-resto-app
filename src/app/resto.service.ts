@@ -5,10 +5,14 @@ import { HttpClient } from '@angular/common/http';
 })
 export class RestoService {
 
-  GET_RESTAURANTS = "http://localhost:3000/restaurants";
+  RESTAURANTS = "http://localhost:3000/restaurants";
   constructor(private http: HttpClient) { }
 
-  getRestaurants() {
-      return this.http.get(this.GET_RESTAURANTS);
+  getResto() {
+      return this.http.get(this.RESTAURANTS);
+  }
+
+  saveResto(data) {
+      return this.http.post(this.RESTAURANTS,data);
   }
 }

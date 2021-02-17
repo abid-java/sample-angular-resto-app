@@ -12,7 +12,7 @@ export class ListRestoComponent implements OnInit {
   constructor( private resto: RestoService ) { }
 
   ngOnInit(): void {
-      this.resto.getRestaurants().subscribe((response) => {
+      this.resto.getResto().subscribe((response) => {
         console.warn(response);
         this.restaurants = response;
       });
