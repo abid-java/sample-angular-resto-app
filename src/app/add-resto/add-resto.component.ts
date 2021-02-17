@@ -8,7 +8,7 @@ import { RestoService } from '../resto.service';
   styleUrls: ['./add-resto.component.css']
 })
 export class AddRestoComponent implements OnInit {
-
+  alert: boolean = false;
   addResto = new FormGroup({  name: new FormControl(''),
                               address: new FormControl(''),
                               email: new FormControl('')  })
@@ -19,8 +19,13 @@ export class AddRestoComponent implements OnInit {
 
   collectResto() {
     this.resto.saveResto(this.addResto.value).subscribe((response)=>{
-      console.warn('result : ', response);
+      this.alert = true;
+      this.addResto.reset({});
     });
+  }
+
+  closeAlert(){
+    this.alert = false;
   }
 
 }

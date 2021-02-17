@@ -1,3 +1,11 @@
+<h1>New Restaurant</h1>
+<div *ngIf="alert" class="alert alert-success alert-dismissible fade show" role="alert">
+  <strong>Success!</strong>Information is saved successfully.
+  <button (click)="closeAlert()" type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
 <form [formGroup]="addResto" (ngSubmit)="collectResto()">
   <div class="form-group">
     <label>Name</label>
