@@ -13,10 +13,22 @@
       "email": "om@test.com"
     },
     {
+      "id": 3,
       "name": "McDonald's restaurant",
       "address": "Noida sector 110",
-      "email": "McDonalds@test.com",
-      "id": 3
+      "email": "McDonalds@test.com"
+    },
+    {
+      "id": 4,
+      "name": "Burget King restaurant",
+      "address": "gurgaon sector 110",
+      "email": "bking@test.com"
+    },
+    {
+      "id": 5,
+      "name": "Halidram King restaurant",
+      "address": "Draka sector 110",
+      "email": "halidram@test.com"
     }
   ]
 }

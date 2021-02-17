@@ -1,9 +1,17 @@
-<h1>Restaurant Application</h1>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Restaurant Application</a>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" routerLink="login">Login</a>
+      <a class="nav-item nav-link" routerLink="register">Sign Up</a>
+      <a class="nav-item nav-link" routerLink="list">Restaurants</a>
+      <a class="nav-item nav-link" routerLink="add">New</a>
+      <a class="nav-item nav-link" routerLink="update">Update</a>
+    </div>
+  </div>
+</nav>
 <ul>
-  <li><a routerLink="login">Login</a></li>
-  <li><a routerLink="register">Sign Up</a></li>
-  <li><a routerLink="list">Restaurants</a></li>
-  <li><a routerLink="add">New Restaurant</a></li>
-  <li><a routerLink="update">Update Restaurant</a></li>
 </ul>
-<router-outlet></router-outlet>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
