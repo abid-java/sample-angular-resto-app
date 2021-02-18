@@ -5,14 +5,16 @@
       <th scope="col">Name</th>
       <th scope="col">Address</th>
       <th scope="col">Email</th>
+      <th scope="col">Operations</th>
     </tr>
   </thead>
   <tbody>
     <tr *ngFor="let restaurant of restaurants">
-      <td>{{ restaurant.id }}</td>
-      <td>{{ restaurant.name }}</td>
-      <td>{{ restaurant.address }}</td>
-      <td>{{ restaurant.email }}</td>
+      <th>{{ restaurant.id }}</th>
+      <th>{{ restaurant.name }}</th>
+      <th>{{ restaurant.address }}</th>
+      <th>{{ restaurant.email }}</th>
+      <th><i (click)="deleteResto(restaurant.id)" class="fa fa-trash" style="font-size:20px;color:red;"></i></th>
     </tr>
   </tbody>
 </table>

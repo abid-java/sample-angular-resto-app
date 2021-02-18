@@ -15,4 +15,8 @@ export class RestoService {
   saveResto(data) {
       return this.http.post(this.RESTAURANTS,data);
   }
+
+  deleteResto(id) {
+    return this.http.delete(`${this.RESTAURANTS}/${id}`);
+  }
 }

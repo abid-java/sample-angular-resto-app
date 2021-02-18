@@ -8,7 +8,7 @@ import { RestoService } from '../resto.service';
 })
 export class ListRestoComponent implements OnInit {
 
-  restaurants = {};
+  restaurants: any = [];
   constructor( private resto: RestoService ) { }
 
   ngOnInit(): void {
@@ -16,6 +16,13 @@ export class ListRestoComponent implements OnInit {
         console.warn(response);
         this.restaurants = response;
       });
+  }
+
+  deleteResto(id) {
+    this .restaurants.splice(id-1,1);
+    this.resto.deleteResto(id).subscribe((response) => {
+      console.warn('result', response);
+    });
   }
 
 }
